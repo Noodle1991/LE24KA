@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 
 long int hex2dec(const char *str) {
     long int result;
