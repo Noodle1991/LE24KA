@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 
 struct mobilephone {
     double weight;
@@ -9,7 +9,8 @@ struct mobilephone {
 int main() {
     int a;
     std::cin >> a;
-    mobilephone MP[a];
+    mobilephone* MP;
+    MP = new mobilephone[a];
     for (int i = 0; i < a; i++) {
         std::cin >> MP[i].weight >> MP[i].is_broken >> MP[i].price ;
     }
@@ -26,5 +27,6 @@ int main() {
         std::cout << "\"/>" << '\n';
     }
     std::cout << "</MobilePHones>" << '\n';
+    delete [] MP; MP=nullptr;
     return 0;
 }
