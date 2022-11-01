@@ -1,5 +1,7 @@
 #include <iostream>
 
+/// проекта нет
+/// не компилируется
 long int hex2dec(const char *str) {
     long int result;
     if (str == nullptr || *str == '\0') {
