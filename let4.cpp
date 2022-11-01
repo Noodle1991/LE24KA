@@ -1,14 +1,19 @@
  #include <iostream>
 
+/// проекта нет
+/// не компилируется
+/// не корректное название типа
 struct mobilephone {
     double weight;
     bool is_broken;
     double price;
 };
 
+/// программа не отвечает требованиям задания
 int main() {
     int a;
     std::cin >> a;
+    /// не корректное название переменной
     mobilephone* MP;
     MP = new mobilephone[a];
     for (int i = 0; i < a; i++) {
@@ -27,6 +32,7 @@ int main() {
         std::cout << "\"/>" << '\n';
     }
     std::cout << "</MobilePHones>" << '\n';
+ /// оформление кода
     delete [] MP; MP=nullptr;
     return 0;
 }
